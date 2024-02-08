@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Market Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Smart Phone Market Survey Form</h1>
+    <p id="description">In order to better serve our customers, thank you very much for spending 3 minutes to cooperate with us in filling out this market survey!</p>
+    <form method="post" action="https://www.freecodecamp.org/" name="survey-form" id="survey-form">
+    <fieldset>
+      <legend> Have you heard of our company before?</legend>
+      <label for="hear-before-y" ><input name="hear-before" id="hear-before-y" type="radio" value="yes" checked/> Yes
+      </label>
+      <label for="hear-before-n"><input id="hear-before-n" type="radio" name="hear-before" value="no" /> No
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Online or offline shopping, which one do you prefer?</legend>
+      <label for="online">
+        <input id="online" name="on-offline" type="radio" value="online" checked /> Online 
+      </label>
+      <label for="offline">
+        <input id="offline" name="on-offline" type="radio" value="offline"/> Offline
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>What mobile phone brands have you used? </legend>  
+      <label for="apple"><input type="checkbox" id="apple" name="brand" value="apple" /> Apple 
+      </label>
+      <label for="huawei">
+        <input type="checkbox" id="huawei" name="brand" checked value="huawei"/> Huawei
+      </label>
+      <label for="xiaomi">
+        <input id="xiaomi" name="brand" type="checkbox" value="xiaomi"/> Xiaomi 
+      </label>
+      <label for="samsung">
+        <input id="samsung" name="brand" type="checkbox" value="samsung"/> Samsung 
+      </label>
+      <label for="vivo">
+        <input id="vivo" name="brand" type="checkbox" value="vivo" /> Vivo 
+      </label>
+      <label for="oppo">
+        <input id="oppo" name="brand" type="checkbox" value="oppo"/> Oppo 
+      </label>
+      <label for="tecno">
+        <input id="tecno" name="brand" type="checkbox" value="tecno"/> Tecno 
+      </label>
+      <label for="other">
+        <input id="other" name="brand" type="checkbox" value="other"/> Other 
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>When buying a mobile phone,what aspect of the mobile phone do you care about most?</legend> 
+      <select id="dropdown" name="most-care" required>
+            <option disabled selected value>Select an option</option>
+            <option value="appearance">Appearance</option>
+            <option value="response-speed">Response speed</option>
+            <option value="battery-life">Battery life</option>
+            <option value="camera-function">Camera function</option>
+            <option value="software-store">Software store</option>
+            <option value="stability">Stability</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label id="name-label" for="name">Your name: <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <label id="email-label" for="email">Your email: <input type="email" id="email" placeholder="Enter your Email" required />
+      </label>
+      <label id="number-label" for="number">Your age: <input type="number" min="10" max="99" id="number" placeholder="Age" required />
+      </label>
+      <label for="suggestion"> What suggestions do you have for the products sold by our company?
+        <textarea id="suggestion" name="suggestion" rows="3" cols="30" placeholder="Such as price,quality,after-sales service support,etc" >
+        </textarea>
+      </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
